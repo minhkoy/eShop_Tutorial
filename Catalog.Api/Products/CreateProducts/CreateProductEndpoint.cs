@@ -13,6 +13,7 @@
                 var response = result.Adapt<CreateProductResponse>();
                 return Results.Created($"/products/{result.Id}", response);
             });
+            app.MapGet("/", () => "Hi World!");
         }
     }
 }

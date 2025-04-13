@@ -17,6 +17,8 @@ var app = builder.Build();
 
 //app.MapDefaultEndpoints();
 
+//app.MapGet("/", () => "Hello World");
+
 app.MapCarter();
 
 app.Run();
