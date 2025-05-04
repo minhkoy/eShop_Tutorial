@@ -4,4 +4,6 @@ global using MediatR;
 global using BuildingBlocks.CQRS;
 global using Catalog.Api.Models;
 global using Marten;
-using Catalog.Api.Exceptions;
+global using Catalog.Api.Exceptions;
+
+global using FluentValidation;
