@@ -9,12 +9,11 @@ services:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_DB=CatalogDb
-
-  catalog.api:
-    image: ${DOCKER_REGISTRY-}catalogapi
-    build:
-      context: .
-      dockerfile: Catalog.Api/Dockerfile
+    catalog.api:
+        image: ${DOCKER_REGISTRY-}catalogapi
+        build:
+          context: .
+          dockerfile: Catalog.Api/Dockerfile
 
 volumes:
     postgres_catalog:
